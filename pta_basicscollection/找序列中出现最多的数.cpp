@@ -1,13 +1,9 @@
-1. 使用数组索引的方式，也就是下方代码
-
-2. 先装到数组，然后排序，然后遍历，通过index++的方式找最大值
-
 #include <iostream>
 
 using namespace std;
 int main()
 {
-	int i,n,a[1000],count,max=0,num,j;
+	int i,n,a[1000],count,max=0,num,j; // 使用哈希表的方式统计出现次数,然后通过最导致输出索引
 	scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{

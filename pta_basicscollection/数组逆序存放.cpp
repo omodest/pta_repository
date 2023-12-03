@@ -4,7 +4,8 @@ using namespace std;
 
 int main()
 {
-  int i,j=0,a,b; // 双指针 i,j
+  // 方法1 双指针 i,j 交换
+  int i,j=0,a,b; 
   scanf("%d\n",&a);
   int arr[a];
   // 初始化

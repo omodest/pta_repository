@@ -1,7 +1,7 @@
 #include <iostream>
 
 using namespace std;
-
+// 使用哈希表的方式
 int main(){
     int n;
     scanf("%d",&n);

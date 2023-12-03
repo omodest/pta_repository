@@ -1,20 +1,20 @@
 #include <iostream>
-#include <cmath>
 
 using namespace std;
 
 int main()
 {
-  int i,a, n,s=0;
-  scanf("%d %d",&a,&n);
-  // 备份一个a值
-  int remark = a;
-  for(i = 0;i < n; i++){
-    s += a;
-    // 第n个a = 第n-1个a * 10 + a(初始化的a)
-    a *= 10;
-    a += remark;
+  int M, N;
+  scanf("%d %d",&M,&N);
+
+  int sum = M * N;
+  int temp = 0;
+  while(N % M != 0){ // 辗转相除法
+    temp = M;
+    M = N % M;
+    N = temp;
   }
-  printf("s = %d",s);
+  printf("%d %d",M,sum/M); // M为最大公约束，sum/M为最小公倍数
+  
   return 0;
 }

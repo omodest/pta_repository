@@ -4,19 +4,18 @@ using namespace std;
 
 int main()
 {
-  // sum如果给初值0，将内层循环j的初始值改为1,为什么会有问题
-  int i,j,k,a,b,sum=1,flag=0;
+  int i,j,k,a,b,sum=0,flag=0;
   scanf("%d %d",&a,&b);
   for(i = a; i <= b; i++){
+    sum = 0;
     // 求这个数所有的因数
-    for(j = 2; j < i; j++){
+    for(j = 1; j < i; j++){
       if(i % j == 0){
          sum = sum + j;
       }
     }
     // 判断是否是完数
      if(sum != i){
-       sum = 1;
        continue;
      }
      flag = 1;

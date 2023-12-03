@@ -12,14 +12,14 @@ int main() {
         printf("a");
         return 0;
     }
-    // 使用数组(逆序存放金额)
+    // 使用数组(本质上也是哈希表)
     int len = 0;
     int digits[9] = {0};
     while (money) {
         digits[len++] = money % 10;
         money /= 10;
     }
-
+    // 哈希表 分别代表  个(没有单位) 十 百 千 万 十万 百万 千万 亿
     char currencyUnit[9] = {'\0', 'S', 'B', 'Q', 'W', 'S', 'B', 'Q', 'Y'};
     // 从最高位开始遍历
     for (int i = len - 1; i >= 0; i--) {

@@ -10,7 +10,7 @@ int main(){
     int n, i, j;
     scanf("%d", &n);
     
-    struct fri friends[n], temp; // temp:交换变量
+    struct fri friends[n], temp; // 结构体排序需要使用 struct fri类型的temp
     
     for( i=0; i<n; i++ )
         scanf("%s %d %s", &friends[i].name, &friends[i].birthday, &friends[i].tel);

@@ -35,7 +35,7 @@
      return 0;
    }
 
-2. 方法2
+2. 直接求和
 
 import java.util.Scanner;
 
@@ -44,7 +44,7 @@ public class Main {
      			 Scanner in = new Scanner(System.in);
 			      int a = in.nextInt(),b = in.nextInt();
             // 直接求和
-			      int sum = a/100*60 + a%100 + b;
+			      int sum = a/100*60 + a%100 + b; //
 			      int h = sum / 60;
 			      int s = sum % 60;
 			      System.out.print(h*100+s);

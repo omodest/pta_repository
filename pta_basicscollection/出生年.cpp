@@ -9,7 +9,7 @@ int main()
     while (1)
     {
         // 使用数组,索引表示位数
-        int flag[10] = { 0 };
+        int flag[10] = { 0 }; // 哈希表的方法
         cnt = 0;
         int t = y;
         if (t < 1000)

@@ -6,7 +6,7 @@ int main()
 {
   int i,j,a,b;
   bool flag = false;
-  scanf("%d\n",&a);
+  scanf("%d",&a);
   int arr[a],k = 0,max = 0;
   // 初始化
   for(i = 0; i < a; i++){

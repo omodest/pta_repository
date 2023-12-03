@@ -1,7 +1,9 @@
 #include <iostream>
 
 using namespace std;
-
+// 按给定格式输出N的素因式分解表达式，即 N=p1^k1*p2^k2*…*pm^km，
+// 其中pi为素因子并要求由小到大输出，指数ki为pi的个数；当ki为1即因子pi只有一个时不输出ki。
+//   1323=3^3*7^2
 int main()
 {
     long int arr[8192] = { 0 }, a = 0, l = 0, flag = 1;

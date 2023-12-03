@@ -2,13 +2,14 @@
 #include <cmath>
 using namespace std;
 
+// æ±‚ä¸€å…ƒäºŒæ¬¡æ–¹ç¨‹axÂ²ï¼‹bxï¼‹cï¼0çš„æ ¹ï¼Œç»“æžœä¿ç•™2ä½å°æ•°
 int main()
 {
   double a,b,c,deta;
   double x1,x2;
   scanf("%lf %lf %lf",&a,&b,&c);
   deta = b*b - 4*a*c;
-  // Èç¹ûa=0,²»ÄÜÊ¹ÓÃdeta
+  // æ±‚æ ¹å…¬å¼çš„ç‰¹æ®Šæƒ…å†µ
   if(a == 0){
     if(b == 0 && c != 0){
       printf("Not An Equation");
@@ -23,7 +24,7 @@ int main()
       printf("%.2lf",0);
     }
   }
-  // Èç¹û a²»µÈÓÚ0£¬¿ÉÒÔÊ¹ÓÃdete
+  // æ­£å¸¸åˆ¤æ–­
   else{
     if(deta > 0){
       x1=(-b+sqrt(b*b-4*a*c))/(2*a);
@@ -32,7 +33,7 @@ int main()
       printf("%.2lf\n",x2);
     }
     else if(deta < 0){
-      // ¶Ô³ÆÖáÎª¸´Êý¸ùÊµ²¿£¬¸ºÅÐ±ðÊ½¿ª¸ùºÅÎª¸´Êý¸ùÐé²¿
+
       if(-b/(2*a)!=0){
           printf("%0.2f+%0.2fi\n",-b/(2*a)*1.0,1.0*(sqrt(-deta)/(2.0*a)));
           printf("%0.2f-%0.2fi\n",-b/(2*a)*1.0,1.0*(sqrt(-deta)/(2.0*a)));

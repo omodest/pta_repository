@@ -4,18 +4,18 @@ int main () {
 
     int rabbit=0,turtle=0,minute,rest=-1,run=10;  
     scanf ("%d",&minute) ; 
-    
+    // ä»¥æ—¶é—´ä½œä¸ºå¾ªç¯æ¡ä»¶
     while(minute--){
-        turtle += 3;        // ÎÚ¹êÃ¿·ÖÖÓ¶¼×ß
-        if (run-- > 0)      // run±íÊ¾ÍÃ×Ó»¹ÒªÅÜµÄÊ±¼ä£¬runºÍrestÒ»¶¨ÊÇÒ»¸öÎª0Ò»¸ö²»Îª0
-            rabbit += 9;
-        if (run == 0 ){     // ÍÃ×ÓµÄÊ®·ÖÖÓÅÜÍêÁË£¬ÅĞ¶ÏÊÇ·ñĞèÒªĞİÏ¢
-            if (rabbit > turtle && rest != 0)  // restÊÇÍÃ×ÓĞİÏ¢Ê±¼ä
-                rest = 30;   
+        turtle += 3;  // turtleè¡¨ç¤ºä¹Œé¾Ÿèµ°çš„è·¯ç¨‹
+        if (run-- > 0)     
+            rabbit += 9; // rabbitè¡¨ç¤ºå…”å­å¤´çš„è·¯ç¨‹
+        if (run == 0 ){   // å…”å­è·‘å®Œ10åˆ†é’Ÿ,ç„¶ååˆ¤æ–­
+            if (rabbit > turtle && rest != 0)  
+                rest = 30;   // å…”å­ä¼‘æ¯çš„æ ‡å¿—
             else 
-                run = 10 ;
+                run = 10 ; // å…”å­ç»§ç»­è·‘
         }
-        if (rest-- == 0)                   
+        if (rest-- == 0)  // ä¼‘æ¯å®Œäº†å…”å­å¼€å§‹è·‘   
             run = 10;
     }
     if(turtle > rabbit)
